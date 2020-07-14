@@ -2,19 +2,19 @@
 <nav>
   <ul class="inline">
     <li>
-        <a target="_blank" title="View site source on GitHub" href="https://github.com/{{ site.guardian.social_links.github_repo }}">source</a>
+        <a target="_blank" title="View site source on GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}">source</a>
     </li>
     <li>
-        <a target="_blank" title="View current page on GitHub" href="https://github.com/{{ site.guardian.social_links.github_repo }}/blob/master/{{page.path}}">view</a>
+        <a target="_blank" title="View current page on GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}/blob/master/{{page.path}}">view</a>
     </li>
     <li>
-        <a target="_blank" title="Edit current page on GitHub" href="https://github.com/{{ site.guardian.social_links.github_repo }}/edit/master/{{page.path}}">edit</a>
+        <a target="_blank" title="Edit current page on GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}/edit/master/{{page.path}}">edit</a>
     </li>
     <li>
-        <a target="_blank" title="Last site commit" href="https://github.com/{{ site.guardian.social_links.github_repo }}/commit/{{ site.git.last_commit.short_sha }}">{{ site.git.last_commit.short_sha }}</a>
+        <a target="_blank" title="Last site commit" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}/commit/{{ site.git.last_commit.short_sha }}">{{ site.git.last_commit.short_sha }}</a>
     </li>
     <li>
-        <a target="_blank" title="Last page commit" href="https://github.com/{{ site.guardian.social_links.github_repo }}/commit/{{ page.git.last_commit.short_sha }}">{{ page.git.last_commit.short_sha }}</a>
+        <a target="_blank" title="Last page commit" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}/commit/{{ page.git.last_commit.short_sha }}">{{ page.git.last_commit.short_sha }}</a>
     </li>
   </ul>
   </nav >
