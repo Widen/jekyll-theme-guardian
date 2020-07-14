@@ -1,11 +1,15 @@
 .posts {
-    article {
-        margin-bottom: 30px;
-    }
+  ul {
+    padding-left: 0;
+  }
 
-    .posts-excerpt {
-      font-style: italic;
-      font-size: 1.65rem;
-      color: $dark-grey;
-    }
+  article {
+    margin-bottom: 30px;
+  }
+
+  .posts-excerpt {
+    font-style: italic;
+    font-size: 1.65rem;
+    color: $dark-grey;
+  }
 }
