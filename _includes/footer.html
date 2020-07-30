@@ -14,12 +14,12 @@
         </nav >
         <nav>
           <ul class="site-social-links inline">
-              <li><a target="_blank" title="RSS Feed" href="/feed.xml" class="ion-social-rss"></a></li>
+              <li><a target="_blank" title="RSS Feed" href="/feed.xml"><ion-icon name="logo-rss"></ion-icon></a></li>
               {% if site.guardian.social_links.email_subscription_url %}
-              <li><a target="_blank" title="Email Subscription" href="{{ site.guardian.social_links.email_subscription_url }}" class="ion-email-unread"></a></li>
+              <li><a target="_blank" title="Email Subscription" href="{{ site.guardian.social_links.email_subscription_url }}"><ion-icon name="mail"></ion-icon></a></li>
               {% endif %}
-              <li><a target="_blank" title="GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}" class="ion-social-github"></a></li>
-              <li><a target="_blank" title="Twitter" href="https://twitter.com/{{ site.guardian.social_links.twitter }}" class="ion-social-twitter"></a></li>
+              <li><a target="_blank" title="GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}"><ion-icon name="logo-github"></ion-icon></a></li>
+              <li><a target="_blank" title="Twitter" href="https://twitter.com/{{ site.guardian.social_links.twitter }}"><ion-icon name="logo-twitter"></ion-icon></a></li>
           </ul>
         </nav>
         <p>© Copyright {{ site.time | date: '%Y' }}, <a title="Widen Homepage" target="_blank" href="http://widen.com">Widen Enterprises, Inc.</a></p>
