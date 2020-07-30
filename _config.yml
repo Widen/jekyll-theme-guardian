@@ -7,6 +7,7 @@ guardian:
     twitter: widendev
     github_org: widen
     github_repo: jekyll-theme-guardian
+    email_subscription_url: https://widen.com
   tracking:
     google_analytics_code:
     disqus_shortname:

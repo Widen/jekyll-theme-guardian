@@ -15,6 +15,9 @@
         <nav>
           <ul class="site-social-links inline">
               <li><a target="_blank" title="RSS Feed" href="/feed.xml" class="ion-social-rss"></a></li>
+              {% if site.guardian.social_links.email_subscription_url %}
+              <li><a target="_blank" title="Email Subscription" href="{{ site.guardian.social_links.email_subscription_url }}" class="ion-email-unread"></a></li>
+              {% endif %}
               <li><a target="_blank" title="GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}" class="ion-social-github"></a></li>
               <li><a target="_blank" title="Twitter" href="https://twitter.com/{{ site.guardian.social_links.twitter }}" class="ion-social-twitter"></a></li>
           </ul>

@@ -37,6 +37,7 @@ guardian:
     twitter: <TWITTER_USERNAME>
     github_org: <GITHUB_ORGANIZATION_NAME>
     github_repo: <GITHUB_REPOSITORY_NAME>
+    email_subscription_url: <EMAIL_SUBSCRIPTION_URL>
   tracking:
     google_analytics_code: <GOOGLE_ANANLYTICS_CODE>
     disqus_shortname: <DISQUS_SHORTNAME>
