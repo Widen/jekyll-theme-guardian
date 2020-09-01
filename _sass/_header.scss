@@ -14,6 +14,24 @@ header.site-header{
 
     }
 
+    .subscribe {
+      float: right;
+      margin-top: 20px;
+
+
+      a {
+        padding: 10px 12px;
+        background: #2273c3;
+        border-radius: 4px;
+        color: white;
+        font-size: 10px;
+        font-weight: 400;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+
     h2 {
         display: inline;
         position: relative;

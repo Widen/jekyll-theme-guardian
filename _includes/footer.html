@@ -14,10 +14,7 @@
         </nav >
         <nav>
           <ul class="site-social-links inline">
-              <li><a target="_blank" title="RSS Feed" href="{{ "/feed.xml" | relative_url }}"><ion-icon name="logo-rss"></ion-icon></a></li>
-              {% if site.guardian.social_links.email_subscription_url %}
-              <li><a target="_blank" title="Email Subscription" href="{{ site.guardian.social_links.email_subscription_url }}"><ion-icon name="mail"></ion-icon></a></li>
-              {% endif %}
+              <li><a target="_blank" title="RSS Feed" href="{{ "/feed.xml" | relative_url }}"><ion-icon name="logo-rss"></ion-icon></a></li>          
               <li><a target="_blank" title="GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}"><ion-icon name="logo-github"></ion-icon></a></li>
               <li><a target="_blank" title="Twitter" href="https://twitter.com/{{ site.guardian.social_links.twitter }}"><ion-icon name="logo-twitter"></ion-icon></a></li>
           </ul>
