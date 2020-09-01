@@ -2,6 +2,7 @@ header.site-header{
 
     background-color: $dark-grey;
     background-image: url($header_background_url);
+    background-size: cover;
     padding: 20px 0 18px 0;
 
     .wrapper {
