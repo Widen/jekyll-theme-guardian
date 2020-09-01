@@ -1,0 +1,25 @@
+steps:
+
+  - label: ":md: Publish test blog"
+    branches: !master
+    command:
+      - "echo 'baseurl: \"/jekyll-theme-guardian/${BUILDKITE_BUILD_NUMBER}/_site\"' >> _config_test.yml"
+      - "bundle install"
+      - "bundle exec jekyll build --drafts --config _config.yml,_config_test.yml"
+    agents:
+      queue: builder
+    artifact_paths: "_site/**/*"
+    plugins:
+      - docker#v3.5.0:
+          image: "ruby:2.6.3"
+          always-pull: true
+
+  - wait
+
+  - label: ":console: Annotate test blog link"
+    command: |
+      cat << EOF | buildkite-agent annotate --style "success"
+        <p class="h1"><a href="artifact://_site/index.html">View Test Blog</a></p>
+      EOF
+    agents:
+      queue: builder

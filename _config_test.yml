@@ -1,0 +1,5 @@
+# overrides for test deploy
+url: https://buildkite.yden.us
+guardian:
+  tracking:
+    google_analytics_code: ""
