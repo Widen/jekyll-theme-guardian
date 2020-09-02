@@ -19,7 +19,6 @@ header.site-header{
 
         a {
             display: inline-block;
-            color: $white;
         }
 
         @media (max-width: 767px) {
@@ -29,9 +28,8 @@ header.site-header{
 
     .subscribe {
       padding: 10px 12px;
-      background-color: #2273c3;
+      background-color: $white;
       border-radius: 4px;
-      color: white;
       font-size: 10px;
       font-weight: 400;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -39,7 +37,7 @@ header.site-header{
       letter-spacing: 2px;
 
       &:hover {
-        background-color: darken(#2273c3, 5%);
+        background-color: darken($white, 5%);
       }
     }
 
