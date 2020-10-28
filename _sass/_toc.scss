@@ -3,8 +3,10 @@
   padding: 8px;
 }
 
-.toc > ul,li{
-  list-style-type: none;
+.toc {
+    ul, li {
+        list-style-type: none;
+    }
 }
 
 li.toc-entry {
