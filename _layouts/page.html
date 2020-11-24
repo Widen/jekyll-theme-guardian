@@ -11,13 +11,17 @@ layout: default
     </header>
 
     {% if page.toc == true %}
-    <aside class="toc">
-        {{ content | toc_only }}
-    </aside>
+        <aside class="toc">
+            {{ content | toc_only }}
+        </aside>
+        <article role="article">
+          {{ content | inject_anchors }}
+        </article>
+    {% else %}
+        <article role="article">
+          {{ content }}
+        </article>
     {% endif %}
 
 
-    <article role="article">
-      {{ content | inject_anchors }}
-    </article>
 </div>
