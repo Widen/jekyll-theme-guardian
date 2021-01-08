@@ -14,15 +14,13 @@
         </nav >
         <nav>
           <ul class="site-social-links inline">
-              <li><a target="_blank" title="RSS Feed" href="{{ "/feed.xml" | relative_url }}"><ion-icon name="logo-rss"></ion-icon></a></li>          
+              <li><a target="_blank" title="RSS Feed" href="{{ "/feed.xml" | relative_url }}"><ion-icon name="logo-rss"></ion-icon></a></li>
               <li><a target="_blank" title="GitHub" href="https://github.com/{{ site.guardian.social_links.github_org }}"><ion-icon name="logo-github"></ion-icon></a></li>
               <li><a target="_blank" title="Twitter" href="https://twitter.com/{{ site.guardian.social_links.twitter }}"><ion-icon name="logo-twitter"></ion-icon></a></li>
           </ul>
         </nav>
         <p>© Copyright {{ site.time | date: '%Y' }}, <a title="Widen Homepage" target="_blank" href="http://widen.com">Widen Enterprises, Inc.</a></p>
-
         <p><strong>Looking for work?</strong> <a title="Come engineer with us!" target="_blank" href="http://www.widen.com/careers/">Come engineer with us!</a></p>
-        <p><strong>Something wrong with this page?</strong> Please <a title="Create new issue on bugtracker" target="_blank" href="https://github.com/{{ site.guardian.social_links.github_org }}/{{ site.guardian.social_links.github_repo }}/issues/new">file a bug</a>.</p>
         {% include git-info.html %}
     </footer>
 </div>

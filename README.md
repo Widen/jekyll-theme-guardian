@@ -33,6 +33,7 @@ guardian:
   style:
     logo_url: <URL>
     header_background_url: <URL>
+    git_info_enabled: <BOOLEAN>
   social_links:
     twitter: <TWITTER_USERNAME>
     github_org: <GITHUB_ORGANIZATION_NAME>
