@@ -33,11 +33,10 @@ guardian:
   style:
     logo_url: <URL>
     header_background_url: <URL>
-    git_info_enabled: <BOOLEAN>
   social_links:
     twitter: <TWITTER_USERNAME>
     github_org: <GITHUB_ORGANIZATION_NAME>
-    github_repo: <GITHUB_REPOSITORY_NAME>
+    github_repo: <GITHUB_REPOSITORY_NAME> (if present, GitHub links will be rendered in the footer)
     email_subscription_url: <EMAIL_SUBSCRIPTION_URL>
   tracking:
     google_analytics_code: <GOOGLE_ANANLYTICS_CODE>
@@ -56,7 +55,7 @@ guardian:
   * `analytics` - if `site.guardian.tracking.google_analytics_code` is populated, this will include GA tracking code
 * `header` - included on the `default` layout; renders the header with `site.guardian.style.logo_url` and `site.guardian.style.header_background_url`
 * `footer` - included on the `default` layout; renders a footer with social links
-  * `git-info` - includes links to GitHub to view/edit content
+  * `git-info` - includes links to GitHub to view/edit content (if `site.guardian.social_links.github_repo` is present)
 * `disqus` - included on the `post` layout; if `site.guardian.tracking.disqus_shortname` is populated, this will include a Disqus comment block
 
 ### Assets
