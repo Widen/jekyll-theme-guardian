@@ -1,6 +1,7 @@
 //this should apply only to inline code (i.e., `code`) not multiline code blocks
 
-.language-plaintext.highlighter-rouge  {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+code.language-plaintext.highlighter-rouge  {
+  background-color: #afb8c133;
+  border-radius: 4px;
+  padding: 0 4px;
 }
