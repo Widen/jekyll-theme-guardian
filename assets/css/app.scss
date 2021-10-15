@@ -21,3 +21,4 @@ $header_background_url: "{{ site.guardian.style.header_background_url }}";
 @import "post";
 @import "index";
 @import "toc";
+@import "inline-code"
