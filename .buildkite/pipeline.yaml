@@ -4,6 +4,7 @@ steps:
     branches: !master
     command:
       - "echo 'baseurl: \"/jekyll-theme-guardian/${BUILDKITE_BUILD_NUMBER}/_site\"' >> _config_test.yml"
+      - "gem install bundler -v 2.2.30"
       - "bundle install"
       - "bundle exec jekyll build --drafts --config _config.yml,_config_test.yml"
     agents:
