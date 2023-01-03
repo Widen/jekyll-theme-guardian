@@ -62,9 +62,13 @@ paginate: 5
 paginate_path: "/blog/page/:num/"
 ```
 
+If pagination configuration is not defined, then all posts will be rendered and paginator elements will be hidden.
+
 ### Layouts
 
 * `default` - includes a header, content, and footer section
+* `index` - extends `default`, used as a blog index page (with paginated support for posts), if content is provided it will be rendered _before_ the post list
+* `page` - extends `default`, used for pages
 * `post` - extends `default` and optionally includes a Disqus comment block
 
 ### includes
