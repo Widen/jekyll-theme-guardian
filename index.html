@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="posts">
     <ul>
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
         <article>
           <h1>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -21,4 +21,17 @@ layout: default
         </article>
       {% endfor %}
     </ul>
+
+    <div class="paginator">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}"><ion-icon name="arrow-back-outline"></ion-icon>Previous</a>
+      {% else %}
+        <span><ion-icon name="arrow-back-outline"></ion-icon>Previous</span>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Next<ion-icon name="arrow-forward-outline"></ion-icon></a>
+      {% else %}
+        <span>Next<ion-icon name="arrow-forward-outline"></ion-icon></span>
+      {% endif %}
+    </div>
 </div>

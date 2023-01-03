@@ -1,13 +1,19 @@
+paginate: 2
+paginate_path: "/blog/page/:num/"
+
+plugins:
+  - jekyll-paginate
+
 # theme configuration
 guardian:
   style:
-    logo_url: https://embed.widencdn.net/img/widen/c17yrvuaac/400px@2x/Widen Engineering White Logo.png?u=mcuc7i
-    header_background_url: https://embed.widencdn.net/img/widen/m4ml1kuspv/exact/1680x90_Engineering Blog Banner.png?keep=c&crop=yes&u=ksmgip
+    logo_url: https://embed.widencdn.net/img/widen/c17yrvuaac/400px@2x/widen-engineering-white-logo.png
+    header_background_url: https://embed.widencdn.net/img/widen/m4ml1kuspv/exact/widen-engineering-blog-banner.png?keep=c&crop=yes
   social_links:
-    twitter: widendev
+    twitter: acquiadev
     github_org: widen
     github_repo: jekyll-theme-guardian
-    email_subscription_url: https://www.widen.com
+    email_subscription_url:
   tracking:
     google_analytics_code:
     disqus_shortname:
