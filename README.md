@@ -4,6 +4,18 @@
 
 ## Installation
 
+### Remote Theme (Preferred)
+
+Add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+remote_theme: widen/jekyll-theme-guardian@<TAG>
+```
+
+See [releases](https://github.com/Widen/jekyll-theme-guardian/releases) for the most up-to-date tag to reference.
+
+### Standard Ruby Gem
+
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
@@ -43,9 +55,20 @@ guardian:
     disqus_shortname: <DISQUS_SHORTNAME>
 ```
 
+This theme now properly leverages the `jekyll-pagination` plugin for blog posts. Ensure your site specifies proper [pagination configuration](https://jekyllrb.com/docs/pagination/):
+
+```yaml
+paginate: 5
+paginate_path: "/blog/page/:num/"
+```
+
+If pagination configuration is not defined, then all posts will be rendered and paginator elements will be hidden.
+
 ### Layouts
 
 * `default` - includes a header, content, and footer section
+* `index` - extends `default`, used as a blog index page (with paginated support for posts), if content is provided it will be rendered _before_ the post list
+* `page` - extends `default`, used for pages
 * `post` - extends `default` and optionally includes a Disqus comment block
 
 ### includes

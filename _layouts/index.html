@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="posts">
+{% assign posts = site.posts %}
+{% if paginator %}
+    {% assign posts = paginator.posts %}
+{% endif %}
+{% for post in posts %}
+    <article>
+        <h1>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h1>
+
+        <p class="posts-excerpt">
+        {% if post.excerpt != '' %}
+            {{ post.excerpt | truncatewords: 50 | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+            {{ post.content | strip_html | truncatewords: 50 }}
+        {% endif %}
+        </p>
+
+        <time>{{ post.date | date: "%b %-d, %Y" }}</time> • {{post.author}}
+    </article>
+{% endfor %}
+
+{% if paginator %}
+    <div class="paginator">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}"><ion-icon name="arrow-back-outline"></ion-icon>Newer</a>
+      {% else %}
+        <span><ion-icon name="arrow-back-outline"></ion-icon>Newer</span>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Older<ion-icon name="arrow-forward-outline"></ion-icon></a>
+      {% else %}
+        <span>Older<ion-icon name="arrow-forward-outline"></ion-icon></span>
+      {% endif %}
+    </div>
+</div>
+{% endif %}
